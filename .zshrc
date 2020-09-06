@@ -1,4 +1,4 @@
-HOST_NAME=perceptron
+HOST_NAME=pwd
 
 source ~/.nvm/nvm.sh
 nvm use stable
@@ -79,4 +79,8 @@ alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#In Mac
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#In Linux
+#source /home/julio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
