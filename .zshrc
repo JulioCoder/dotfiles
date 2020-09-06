@@ -47,6 +47,25 @@ function mkcd()
 }
 
 # -------
+# Aliases Arch
+# -------
+alias ls='ls --color=auto'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ff='find / -name'
+alias f='find . -name'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias ip='ip -c'
+alias pacman='pacman --color=auto'
+alias pactree='pactree --color'
+alias vdir='vdir --color=auto'
+alias watch='watch --color'
+
+# -------
 # Aliases
 # -------
 alias 🍺="git checkout -b drunk"
@@ -79,8 +98,5 @@ alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#In Mac
-#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-#In Linux
-#source /home/julio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#Move or create /usr/local/share/    then    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
