@@ -1,6 +1,8 @@
 # dotfiles
+
 Those are my main settings
-### Visual Studio Code
+
+#### vscode-extensions.txt
 
 Inside dev folder, create file vscode-extensions.txt and paste it, then run this command:
 
