@@ -2,14 +2,19 @@ HOST_NAME=pwd
 
 source ~/.nvm/nvm.sh
 nvm use stable
+
 setopt autocd
 setopt appendhistory
 setopt sharehistory
-setopt incappendhistory
+setopt INC_APPEND_HISTORY
+#setopt HIST_IGNORE_DUPS
+#setopt EXTENDED_HISTORY
 
 export PATH=$PATH:$HOME/bin
 
-export HISTSIZE=5000
+export HISTSIZE=10000
+export SAVEHIST=10000
+export HISTFILE=~/.bash_history
 export HISTFILESIZE=10000
 
 bindkey '\e[A' history-search-backward
@@ -24,7 +29,8 @@ bldgrn='\e[1;32m' # Bold Green
 bldpur='\e[1;35m' # Bold Purple
 txtrst='\e[0m'    # Text Reset
 
-emojis=("👾" "🌐" "🎲" "🌍" "🐉" "🌵")
+# emojis=("👾" "🌐" "🎲" "🌍" "🐉" "🌵")
+emojis=("🃏" "⚡" "🌑" "🌗" "♒" "🌕")
 
 EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
 
@@ -47,7 +53,7 @@ function mkcd()
 }
 
 # -------
-# Aliases Arch
+# Arch Aliases
 # -------
 alias ls='ls --color=auto'
 alias ..='cd ..'
@@ -78,7 +84,7 @@ alias nr='npm run'
 alias run='npm run'
 alias nis='npm i -S'
 alias l="ls" # List files in current directory
-alias ll="ls -al" # List all files in current directory in long list format
+alias ll="ls -al -h" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 
 # ----------------------
@@ -98,5 +104,10 @@ alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
 #Move or create /usr/local/share/    then    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/autojump/autojump.zsh
