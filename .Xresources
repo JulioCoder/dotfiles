@@ -71,7 +71,8 @@ URxvt*tabbed.tab-bg:    0
 #define S_violet        #6c71c4
 #define S_blue          #268bd2
 #define S_cyan          #2aa198
-#define S_green         #859900
+#define S_green         #b4c92a
+!S_green was 859900
 
 !! Original (S_base03, S_base00, S_base1, S_base01, S_base1)
 *background:            #000000
