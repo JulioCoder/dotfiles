@@ -1,3 +1,4 @@
+
 HOST_NAME=pwd
 
 #source ~/.nvm/nvm.sh
@@ -72,6 +73,8 @@ alias pacman='pacman --color=auto'
 alias pactree='pactree --color'
 alias vdir='vdir --color=auto'
 alias watch='watch --color'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # -------
 # Aliases
