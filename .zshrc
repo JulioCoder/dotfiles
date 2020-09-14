@@ -1,7 +1,7 @@
 HOST_NAME=pwd
 
-source ~/.nvm/nvm.sh
-nvm use stable
+#source ~/.nvm/nvm.sh
+#nvm use stable
 
 setopt autocd
 setopt appendhistory
@@ -45,7 +45,9 @@ PROMPT_COMMAND=precmd
 PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PS1="$EMOJI >"
 
-fortune | cowsay -f tux
+#fortune | cowsay -f tux
+#buckle &
+neofetch
 
 function mkcd()
 {
@@ -103,10 +105,6 @@ alias gpsh='git push'
 alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-#Move or create /usr/local/share/    then    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
