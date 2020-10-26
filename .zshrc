@@ -1,8 +1,8 @@
 
 HOST_NAME=pwd
 
-#source ~/.nvm/nvm.sh
-#nvm use stable
+source ~/.nvm/nvm.sh
+nvm use stable
 
 setopt autocd
 setopt appendhistory
@@ -30,8 +30,8 @@ bldgrn='\e[1;32m' # Bold Green
 bldpur='\e[1;35m' # Bold Purple
 txtrst='\e[0m'    # Text Reset
 
-# emojis=("👾" "🌐" "🎲" "🌍" "🐉" "🌵")
-emojis=("🃏" "⚡" "🌑" "🌗" "♒" "🌕")
+emojis=("👾" "🌐" "🎲" "🌍" "🐉" "🌵")
+#emojis=("🃏" "⚡" "🌑" "🌗" "♒" "🌕")
 
 EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
 
@@ -48,7 +48,7 @@ PS1="$EMOJI >"
 
 #fortune | cowsay -f tux
 #buckle &
-neofetch
+#neofetch
 
 function mkcd()
 {
@@ -75,7 +75,7 @@ alias vdir='vdir --color=auto'
 alias watch='watch --color'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-
+alias buckle='buckle -f -p /usr/local/share/bucklespring/wav &'
 # -------
 # Aliases
 # -------
@@ -112,3 +112,5 @@ alias gs='echo ""; echo "*********************************************"; echo -e
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/autojump/autojump.zsh
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
