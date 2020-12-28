@@ -1,14 +1,14 @@
 # Setting up the New Macbook M1 apple ARM for web development - 2021
 
-Search the Terminal.app in Applications
+* Search the Terminal.app in Applications
 
-Right click on Terminal > Get Info > Check Open with Rosseta
+* Right click on Terminal > Get Info > Check Open with Rosseta
 
-Once on Terminal.app run this command
+* Once on Terminal.app run this command
 
-``xcode-select --install``
+* ``xcode-select --install``
 
-Go to this website: https://brew.sh then copy the link
+* Go to this website: https://brew.sh then copy the link
 
 
 # dotfiles
