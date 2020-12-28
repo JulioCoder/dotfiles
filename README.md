@@ -1,4 +1,4 @@
-# Setting up the New Macbook M1 apple ARM for development
+# Setting up the New Macbook M1 apple ARM for web development - 2021
 
 1. Search the Terminal.app in Applications
 1. Right click on Terminal > Get Info > Check Open with Rosseta
