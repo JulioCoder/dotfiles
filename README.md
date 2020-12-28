@@ -1,4 +1,5 @@
-# Setting up the New Macbook M1 apple ARM for web development - 2021
+# Setting up the New Macbook M1 apple ARM
+# For web development - 2021
 
 #### Install Development tools
 
