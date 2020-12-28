@@ -3,8 +3,11 @@
 1. Search the Terminal.app in Applications
 1. Right click on Terminal > Get Info > Check Open with Rosseta
 1. Once on Terminal.app run this command
+
 > xcode-select --install
+
 ``xcode-select --install``
+
 1. Go to this website: https://brew.sh then copy the link
 
 
