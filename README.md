@@ -22,13 +22,31 @@
 
 * ``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
 
-#### Install packages
+#### Install iTerm2 and wget
 
 ``brew install iterm2``
+
 ``brew install wget``
+
+#### Close the Terminal.app
+#### In Application right click on iTerm2 and Check ROSSETA Option.
+#### Open iTerm (with ROSSETA)
+
+###### While in your home directory, get some of my run commands.
+
+``wget https://raw.githubusercontent.com/AntonellaCoder/dotfiles/main/.zshrc``
+
+#### Continue installing packages
+
 ``brew install git``
 
+``brew install vcprompt``
 
+``brew install spectacle``
+
+``brew install firefox``
+
+``brew install visual-studio-code``
 
 # dotfiles
 
