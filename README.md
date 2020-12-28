@@ -1,3 +1,12 @@
+# Setting up the New Macbook M1 apple ARM for development
+
+1. Search the Terminal.app in Applications
+1. Right click on Terminal > Get Info > Check Open with Rosseta
+1. Once on Terminal.app run this command
+> xcode-select --install
+1. Go to this website: https://brew.sh then copy the link
+
+
 # dotfiles
 
 Those are my main settings
