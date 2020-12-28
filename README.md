@@ -1,11 +1,5 @@
 # Setting up the New Macbook M1 apple ARM for web development - 2021
 
-#### Check Rosseta Option (Brew does not support apple ARM yet)
-
-* Search the Terminal.app in Applications
-
-* Right click on Terminal > Get Info > Check Open with Rosseta
-
 #### Install Development tools
 
 * Open the Terminal.app run this command
@@ -14,13 +8,27 @@
 
 * If you want to remove this tools, then run ``sudo rm -rf /Library/Developer/CommandLineTools``
 
+#### Check ROSSETA Option (Brew does not support apple ARM yet)
+
+* Open Finder, search the Terminal.app in Applications (not open)
+
+* Right click on Terminal > Get Info > Check Open Using Rosseta
+
 #### Install Brew
 
 * Go to this website: https://brew.sh then copy the link
 
-* Paste in Terminal
+* Paste in Terminal (the link is like the show below, but maybe it will change)
 
-* 
+* ``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
+
+#### Install packages
+
+``brew install iterm2``
+``brew install wget``
+``brew install git``
+
+
 
 # dotfiles
 
